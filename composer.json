@@ -1,0 +1,21 @@
+{
+    "name": "major-caiger/form",
+    "description": "ZF2 Form Helper Module",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "form helper",
+        "form",
+        "module",
+        "zf2"
+    ],
+    "require": {
+        "php": ">=5.4",
+        "zendframework/zendframework": "~2.3"
+    },
+    "autoload":          {
+        "psr-0": {
+            "MajorForm\\": "src/"
+        }
+    }
+}
