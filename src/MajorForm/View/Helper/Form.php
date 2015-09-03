@@ -16,6 +16,10 @@ use Zend\Form\View\Helper\AbstractHelper;
  */
 class Form extends AbstractHelper
 {
+    /**
+     * @param \Zend\Form\Form $form
+     * @return $this|string
+     */
     public function __invoke(\Zend\Form\Form $form)
     {
         if ($form !== null) {
@@ -25,8 +29,12 @@ class Form extends AbstractHelper
         return $this;
     }
 
+    /**
+     * @param \Zend\Form\Form $form
+     * @return string
+     */
     public function render(\Zend\Form\Form $form)
     {
-        // Finish this off
+        return $this->getView()->render('form/form', ['form' => $form]);
     }
 }
